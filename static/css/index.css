@@ -188,7 +188,7 @@ body {
   }
 
   .gif-gallery img {
-    width: 30%; /* Sets the width of each GIF to 20% of its parent container (.gif-gallery) */
+    width: 25%; /* Sets the width of each GIF to 20% of its parent container (.gif-gallery) */
     height: auto; /* Maintains the aspect ratio */
     display: flex; /* Ensures each image takes up its own line, stacking vertically */
     gap: 5px;
@@ -196,6 +196,21 @@ body {
   }
 
   .gif-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 5 px; /* Adds space between items */
+    align-items: center; /* Centers items horizontally within the flex container */
+  }
+
+    .gif-gallery-left img {
+    width: 22%; /* Sets the width of each GIF to 20% of its parent container (.gif-gallery) */
+    height: auto; /* Maintains the aspect ratio */
+    display: flex; /* Ensures each image takes up its own line, stacking vertically */
+    gap: 5px;
+    margin: 5px auto 5px auto; /* Centers the images horizontally and adds bottom margin */
+  }
+
+  .gif-gallery-left {
     display: flex;
     flex-direction: row;
     gap: 5 px; /* Adds space between items */
